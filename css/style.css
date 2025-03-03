@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-size: 2rem;
+    background: #F8F3D9; 
+    display: flex;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.card--stopwatch{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+article {
+    width: 60rem;
+    height: 40rem;
+    background: #EBE5C2; 
+    border-radius: 2rem; 
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    font-size: 1.6rem;
+    line-height: 1.5;
+    color: #333;
+    padding: 2rem;
+}
+
+.article h1 {
+    font-size: 2.4rem;
+    margin-bottom: 1rem;
+}
+
+.article p {
+    margin-bottom: 1rem;
+}
