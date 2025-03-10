@@ -39,3 +39,28 @@ resetButton.onclick = function(){
     minutesTimer.innerText = minutes
     running = false;
 }
+
+/* hier begint de slider */
+const rangeValue = document.getElementById("js--rangeValue");
+const slider = document.getElementById("js--slider");
+
+slider.value = 2;
+rangeValue.innerText = slider.value + "x";
+
+slider.oninput = function(){
+    rangeValue.innerText = slider.value + "x";
+    rangeValue.style.fontSize = slider.value + "em";
+}
+
+
+const text = document.getElementById('js--text');
+const img = document.getElementById('js--img');
+
+let data = fetch('data.json')
+.then(response => response.json())
+.then(data => {
+    console.log(data);
+    gegevens = data;
+    text.innerText = gegevens.text;
+    img.src = gegevens.img;
+})

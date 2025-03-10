@@ -7,28 +7,25 @@
     <link rel="stylesheet" href="css/style.css">
     <script src="main.js" defer></script>
 </head>
-<body>
-    <article class="article">
-        <h1>Article Title 1</h1>
-        <p>This is the content of the first article.</p>
+<body id="js--body">
+    <article class="card--slider">
+        <h2 id="js--rangeValue">0</h2>
+        <input id="js--slider" type="range" min="1" max="4" step="1">
+        
     </article>
-
-    <article class="article">
-        <h1>Article Title 2</h1>
-        <p>This is the content of the second article.</p>
-    </article>
-
-    <article class="card card--stopwatch">
+    <article class="card--buy">
+        <img id="js--img" src="" alt="">
+        <p id="js--text"></p>
+    </article >
+    <article class="card--stopwatch">
         <div>
             <span id="js--minutesTimer">0</span>
             :
             <span id="js--secondsTimer">0</span>
         </div>
-
         <button id="js--start">start</button>
         <button id="js--stop">stop</button>
         <button id="js--reset">reset</button>
     </article>
-    
 </body>
 </html>
